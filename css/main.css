@@ -454,11 +454,23 @@ img {
   cursor: pointer;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .hero {
+    background-image: url(../images/hero/hero-img@2x-mobile.jpg);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url(../images/hero/hero-img-tablet.jpg);
     max-width: 768px;
     height: 400px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/hero/hero-img@2x-tablet.jpg);
   }
 }
 
@@ -472,6 +484,12 @@ img {
     background-image: url(../images/hero/hero-img-desktop.jpg);
     max-width: 1600px;
     height: 600px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: url(../images/hero/hero-Img@2x-desktop.jpg);
   }
 }
 
@@ -1280,15 +1298,19 @@ img {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .portfolio-list {
   list-style: none;
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.portfolio-item {
+  margin-bottom: 15px;
 }
 
 .portfolio-item:not(:last-child) {
@@ -1346,7 +1368,7 @@ img {
   color: #FFFFFF;
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  padding: 70px 24px;
+  padding: 80px 24px;
   transition: transform var(--transition-duration) var(--transition-timing-function);
 }
 
@@ -1390,5 +1412,33 @@ img {
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    justify-content: center;
+  }
+  .portfolio-item {
+    margin-bottom: 0;
+  }
+  .portfolio-list {
+    margin-bottom: 30px;
+  }
+  .overlay-description {
+    padding: 55px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .portfolio-list {
+    margin-bottom: 50px;
+  }
+  .overlay-description {
+    padding: 70px 24px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
