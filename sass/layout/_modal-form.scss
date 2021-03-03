@@ -15,9 +15,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
-
+    width: 100%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -152,8 +154,8 @@
     align-items: center;
     justify-content: center;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
+    font-size: 12px;
+    line-height: 1.172;
     letter-spacing: 0.03em;
     color: #757575;
 
@@ -197,4 +199,15 @@
     border: none;
     padding: 10px 55px;
     cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+    .modal {
+        max-width: 528px;
+        max-height: 581px;   
+    }
+    .modal-form-label-policy {
+        font-size: 14px;
+        line-height: 1.714;
+    }
 }
