@@ -516,18 +516,15 @@ img {
   display: inline-block;
 }
 
-.features-item {
-  width: 450px;
-}
-
 .features-svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 450px;
   height: 120px;
   background: #F5F4FA;
   border-radius: 4px;
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 30px;
 }
 
