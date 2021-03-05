@@ -60,12 +60,15 @@
     }
 
 .mobile-menu {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
     position: absolute;
     width: 100%;
-    min-width: 320px;
+    // min-width: 320px;
     max-width: 480px;
     height: 100vh;
-    max-height: 796px;
+    // max-height: 796px;
     top: 0;
     left: 50%;
     transform: translateX(-50%) translateY(-100%);
@@ -87,9 +90,9 @@
     right: 15px;
 }
 
-.mobile-navigation-list {
-    margin-bottom: 302px;
-}
+// .mobile-navigation-list {
+//     margin-bottom: 302px;
+// }
 
 .mobile-navigation-list-item{
 &:not(:last-child){
