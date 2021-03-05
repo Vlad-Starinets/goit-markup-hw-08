@@ -316,7 +316,7 @@ img {
   .contact-list {
     list-style: none;
     display: block;
-    margin-left: 84px;
+    margin-left: auto;
     padding-top: 21px;
     padding-bottom: 21px;
   }
@@ -398,7 +398,7 @@ img {
     display: flex;
     align-items: center;
     align-items: baseline;
-    margin-left: 305px;
+    margin-left: auto;
   }
   .contact-list-item:not(:last-child) {
     margin-right: 30px;
