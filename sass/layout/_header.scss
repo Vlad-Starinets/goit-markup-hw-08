@@ -61,9 +61,12 @@
 
 .mobile-menu {
     // position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
-    width: 100%;
-    max-width: 480px;
+    width: 100vw;
+    max-width: 767px;
     height: 100vh;
     // min-height: 100%;
     top: 0;
@@ -87,9 +90,9 @@
     right: 15px;
 }
 
-// .mobile-navigation-list {
-//     margin-bottom: 302px;
-// }
+.mobile-navigation-list {
+    margin-bottom: 302px;
+}
 
 .mobile-navigation-list-item{
 &:not(:last-child){
