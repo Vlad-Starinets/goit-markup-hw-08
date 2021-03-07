@@ -234,6 +234,7 @@ img {
   display: flex;
   justify-content: start;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
