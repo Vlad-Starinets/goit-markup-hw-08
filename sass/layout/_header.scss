@@ -90,9 +90,10 @@
     right: 15px;
 }
 
-.mobile-navigation-list {
-    margin-bottom: 302px;
-}
+
+// .mobile-navigation-list {
+//     margin-bottom: 302px;
+// }
 
 .mobile-navigation-list-item{
 &:not(:last-child){
@@ -169,9 +170,17 @@
         display: flex;
         justify-content: start;
         list-style: none;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
     }
 
+    @media screen and (max-width: 479px){
+        .mobile-social-link {
+            font-size: 12px;
+        }
+        .mobile-contact-tel{
+            font-size: 24px;
+        }
+    }
 
     @media screen and (min-width: 768px) {
         .burger-button {
